@@ -1,0 +1,93 @@
+/*
+Filename: news_motion.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 11/25/18
+Description:
+Contains the animations rules for the news.html
+*/
+
+/*static nav animation*/
+@-webkit-keyframes nav-in{
+  to{
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes nav-in{
+  to{
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+/*header animation*/
+@-webkit-keyframes header-minimize{
+  to{
+    height: 17vh;
+    opacity: 1;
+  }
+}
+@keyframes header-minimize{
+  to{
+    height: 17vh;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes heading-in{
+  to{
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes heading-in{
+  to{
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes header-close{
+  to{
+    height: 5vh;
+    opacity: 0;
+  }
+}
+
+@keyframes header-close{
+  to{
+    height: 5vh;
+    opacity: 0;
+  }
+}
+
+/*content animations*/
+@-webkit-keyframes reading-close{
+  to{
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes reading-close{
+  to{
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@-webkit-keyframes reading-open{
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes reading-open{
+  to{
+    opacity: 1;
+  }
+}

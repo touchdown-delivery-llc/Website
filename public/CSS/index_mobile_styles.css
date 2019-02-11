@@ -1,0 +1,435 @@
+/*
+Filename: index_mobile_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 11/7/18
+Description: 
+Styling for the index page, primarily for phones.
+*/
+
+body{
+  width: 100vw;
+  height: fit-content;
+}
+
+/*Mobile Navigation Bar Styles*/
+#mobile-nav{
+  width: 100vw;
+  height: 2em;
+  line-height: 2;
+}
+
+#mobile-nav.off{
+  display: none;
+}
+
+.m-nav-item{
+  width: 15%;
+  height: inherit;
+  padding: 2% 2.5%;
+  color: var(--text-hue);
+  cursor: pointer;
+}
+
+.m-nav-item:hover{
+  background-color: var(--element-light);
+  color: var(--text-dark);
+  padding: 2% 3.5%;
+}
+
+/*Static Navigation Bar Styles*/
+#static-nav{
+  display: none;
+}
+
+#nav-img{
+  height: 6.5vh;
+  padding: 0.5vw;
+  opacity: 0.75;
+}
+
+/*Header Section Styles*/
+header{
+  width: 100vw;
+  height:  80vh;
+  background-color: var(--bg-light);
+}
+
+#head-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 95%;
+}
+
+#head-mission{
+  color: var(--text-dark);
+  width: fit-content;
+  margin: auto;
+  opacity: 0;
+  font-size: 7vw;
+  text-shadow: 2px 2px 2px var(--text-header-shadow);
+  animation: headIn 1.2s 0.2s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#head-button{
+  width: fit-content;
+  margin: auto;
+  padding: 2.3vh;
+  color: var(--text-light);
+  font-size: 3vh;
+  background-color: var(--element-dark);
+  box-shadow: 0 0 17px 0 var(--element-shadow);
+  opacity: 0;
+  animation: buttonIn 0.8s 0.5s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#head-button:hover{
+  box-shadow: 0 0 55px 0 var(--element-shadow);
+}
+
+#head-button:active{
+  box-shadow: 0 0 35px 0 var(--element-shadow);
+}
+
+/*About section*/
+#about{
+  width: 100vw;
+  height: 75vh;
+  padding: 3% 0 1%;
+  background-color: var(--bg-hue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#about-left{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about-left img{
+  width: 90%;
+}
+
+#about-right{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  
+}
+
+#about-title{
+  font-size: 1.7em;
+  box-sizing: border-box;
+  padding: 0 2%;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid var(--element-hue);
+}
+
+#about-desc{
+  font-size: 1.3em;
+  padding: 3.5%;
+  width: 95%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/*Recent Updates Styles*/
+#recent{
+  width: 100vw;
+  height: fit-content;
+  padding: 2% 0;
+  background-color: var(--bg-dark);
+  text-align: center;
+}
+
+#recent-title{
+  color: var(--text-light);
+  width: 70%;
+  margin: auto;
+  padding-bottom: 1.5%;
+  font-size: 2.5em;
+}
+
+#progress-box{
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  padding: 1.5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.event{
+  width: 90%;
+  font-size: 1.5em;
+}
+
+.event img{
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+}
+
+.event figcaption{
+  width: 90%;
+  padding: 1.2%;
+  margin: auto;
+  color: var(--text-light);
+}
+
+/*Skynet Styles*/
+#skynet{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#sky-left{
+  width: 35%;
+  height: 100%;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 2%;
+  z-index: 1;
+  box-shadow: 0 0 50px 5px var(--element-shadow-light);
+}
+
+#sky-left img{
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 80%
+}
+
+#sky-left h3{
+  font-size: 2.5em;
+  width: 90%;
+  margin: auto;
+}
+
+#sky-right{
+  width: 65%;
+  height: 100%;
+  background-color: var(--bg-hue);
+  z-index: 0;
+}
+
+#sky-title{
+  text-align: center;
+  width: 100%;
+  font-size: 2.8em;
+  padding: 3.5% 0 2% 0;
+}
+
+#sky-items{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+}
+
+#sky-desc{
+  box-sizing: border-box;
+  padding: 1.5%;
+  font-size: 0.8em;
+}
+
+/*V8 Model Styles*/
+#v8{
+  width: 100vw;
+  height: fit-content;
+  padding: 2% 0;
+  background-color: var(--bg-light);
+}
+
+#v8-title{
+  width: 100%;
+  padding: 1.2% 0;
+  font-size: 3em;
+  color: var(--text-dark);
+}
+
+#v8-profile{
+  margin: auto;
+  height: 20vw;
+  padding-top: 1%;
+}
+
+#v8-desc{
+  padding: 2% 0;
+  color: var(--text-hue);
+  font-size: 1.7em;
+  margin: auto;
+}
+
+#v8-gallery{
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: 1%;
+  color: var(--text-light);
+  font-size: 1.3em;
+  background-color: var(--element-dark);
+}
+
+#v8-gallery:active{
+  background-color: var(--element-shadow-light);
+}
+
+/*Jobs Styles*/
+#jobs{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-light);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  overflow: hidden;
+}
+
+#job-left{
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  padding: 2%;
+  z-index: 0;
+  background-color: var(--bg-hue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#job-title{
+  padding: 0.5%;
+  box-sizing: border-box;
+  font-size: 3.7em;
+  flex-grow: 10;
+}
+
+#job-desc{
+  font-size: 2em;
+  flex-grow: 1;
+  width: 100%;
+}
+
+#view-jobs{
+  font-size: 1.6em;
+  background-color: var(--element-dark);
+  color: var(--text-light);
+  padding: 1.9% 2.7%;
+  width: fit-content;
+  text-align: center;
+  box-shadow: 0 0 17px 0 var(--element-shadow);
+}
+
+#view-jobs:hover{
+  box-shadow: 0 0 55px 0 var(--element-shadow);
+}
+
+#view-jobs:active{
+  box-shadow: 0 0 35px 0 var(--element-shadow);
+}
+
+.job-item{
+  font-size: 1.5em;
+}
+
+.job-item h3{
+  font-size: 2.5em;
+}
+
+#job-right{
+  width: 100%;
+  height: 70%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-light);
+  box-shadow: 0 0 50px 5px var(--element-shadow-light);
+}
+
+#job-right img{
+  width: 70%;
+}
+
+/*Team Styles*/
+/*Currently omitted due to lack of material*/
+
+/*Footer Styles*/
+footer{
+  width: 100vw;
+  height: fit-content;
+  padding: 1% 0;
+  background-color: var(--bg-dark);
+}
+
+footer div{
+  padding: 0.5% 0;
+  box-sizing: border-box;
+  color: var(--text-light);
+  font-size: 1em;
+}
+
+#footer-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-social{
+  width: 90%;
+  box-sizing: border-box;
+  padding: 1% 0;
+  text-align: center;
+}
+
+#footer-social h3{
+  display: none;
+}
+
+#social-medias{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--element-dark);
+}
+
+#footer-nav{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--element-dark);
+}
+
+.f-nav-item{
+  font-size: 1.2em;
+  padding: 2%;
+  text-align: center;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+#footer-meta h6{
+  text-align: center;
+  font-size: 0.75em;
+  box-sizing: border-box;
+  padding: 2%;
+  color: var(--text-hue);
+}

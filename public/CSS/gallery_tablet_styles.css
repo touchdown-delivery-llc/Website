@@ -1,0 +1,35 @@
+/*
+Filename: gallery_pc_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 12/18/18
+Description: 
+styling for the gallery page, tablet dimensions.
+*/
+
+@media only screen and (min-width: 641px){
+
+/*Navigation Styles*/
+#static-nav{
+  height: 5vh;
+}
+
+#static-nav a{
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+/*Header Styles*/
+#tabs{
+  border-bottom: 2px solid var(--element-hue);
+}
+
+/*Display Styles*/
+
+.item{
+  width: 30%;
+}
+
+/*End of media query*/
+}

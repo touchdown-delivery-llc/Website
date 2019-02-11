@@ -1,0 +1,71 @@
+/*
+Filename: openings_pc_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 12/21/18
+Description: 
+styling for the openings page, pc dimensions.
+*/
+
+@media only screen and (min-width: 1025px){
+
+/*Navigation Styles*/
+#static-nav{
+  height: 3vh;
+}
+
+#static-nav a{
+  font-size: 1.5em;
+  line-height: 0.8;
+}
+
+/*Header Styles*/
+
+#openings h1{
+  font-size: 3.5em;
+}
+
+/*Position Tab Styles*/
+#tabs{
+
+  -webkit-box-pack: justify;
+
+  -webkit-justify-content: space-between;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
+  line-height: 2.5;
+}
+
+.op-tab{
+  font-size: 1.3em;
+}
+
+.active-tab{
+  font-size: 1.3em;
+}
+/*Position Info Styles*/
+#op-desc{
+  width: 90%;
+}
+
+.op-list{
+  width: 46%;
+}
+
+.op-list-item{
+  font-size: 1.2em;
+}
+
+/*Join Styles*/
+#imin{
+  font-size: 1.3em;
+  display: block;
+  padding: 0.7% 0.9%;
+}
+/*Footer Styles Inhereted*/
+
+/*End of media query*/
+}

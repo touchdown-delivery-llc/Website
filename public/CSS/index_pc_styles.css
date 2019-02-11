@@ -1,0 +1,193 @@
+/*
+Filename: index_pc_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 10/22/18
+Description:
+styling for the landing page, pc dimensions.
+
+NEEDS TRIMMING
+*/
+
+@media only screen and (min-width: 1025px){
+
+/*Mobile Navigation Bar Styles*/
+
+#mobile-nav.on{
+  height: 2em;
+  line-height: 2;
+  font-size: 1.3em;
+}
+
+#mobile-nav.off{
+  font-size: 1.3em;
+}
+
+/*Static Navigation Bar Styles*/
+nav#static-nav{
+  font-size: 2em;
+  background: -webkit-linear-gradient(180deg, var(--element-light), var(--transparent));
+  background: -o-linear-gradient(180deg, var(--element-light), var(--transparent));
+  background: linear-gradient(180deg, var(--element-light), var(--transparent));
+}
+
+.nav-item{
+  font-size: 0.7em;
+}
+/*Header Section Styles*/
+#head-mission{
+  font-size: 4.3vw;
+}
+
+#head-button{
+  padding: 1.3%;
+  font-size: 1.2vw;
+}
+
+/*About section*/
+#about{
+  height: 50vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#about-title{
+  font-size: 2.3em;
+  text-align: left;
+  padding: 2%
+}
+
+#about-left img{
+  width: 35vw;
+}
+
+/*Recent Updates Styles*/
+#progress-box{
+  width: 95%;
+  background-color: var(--element-dark);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.event{
+  width: 33%;
+  font-size: 1.5em;
+}
+
+.event img{
+  height: 35vh;
+}
+
+/*Skynet Styles*/
+#sky-left h3{
+  font-size: 2.5em;
+  width: 90%;
+  margin: auto;
+}
+
+#sky-title{
+  font-size: 3.5vw;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#sky-desc{
+  padding: 3%;
+}
+
+/*Jobs Styles*/
+#jobs{
+  height: 65vh;
+}
+
+#job-title{
+  padding: 3% 0.5% 0.5%;
+  font-size: 3.5em;
+  flex-grow: 11;
+}
+
+/*Footer Styles*/
+footer{
+  padding: 1.5% 0;
+}
+
+footer div{
+  padding: 1.2%;
+}
+
+#footer-links{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#footer-social{
+  width: 70%;
+}
+
+#footer-social h3{
+  display: block;
+  color: var(--text-light);
+}
+
+#social-medias{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  border-bottom: none;
+}
+
+#footer-nav{
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: top;
+  -webkit-justify-content: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+  border-bottom: none;
+  border-left: 2px solid var(--element-dark);
+}
+
+.f-nav-item{
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.f-nav-item:hover{
+  background-color: var(--text-dark);
+}
+
+#footer-meta{
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.2%;
+}
+
+#footer-meta h6{
+  padding: 0.5%;
+}
+/*End of media query*/
+}

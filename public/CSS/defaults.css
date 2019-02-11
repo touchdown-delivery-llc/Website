@@ -1,0 +1,108 @@
+/*
+Filename: defaults.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 10/29/18
+Description:
+styling that all pages should have or
+have access to
+*/
+
+/*Colors, Graysacle for now*/
+:root{
+  --temp: rgb(134, 134, 134);
+
+    /*colors for container backgrounds*/
+  --bg-light: rgb(247, 247, 247);
+  --bg-dark: rgb(24, 24, 24);
+  --bg-hue: rgb(218, 218, 218);
+
+  /*colors for text*/
+  --text-light: rgb(236, 236, 236);
+  --text-dark: rgb(41, 41, 41);
+  --text-hue: rgb(136, 136, 136);
+
+  /*colors for other elements*/
+  --element-light: rgb(219, 219, 219);
+  --element-dark: rgb(51, 51, 51);
+  --element-hue: rgb(177, 177, 177); 
+
+  /*shadows*/
+  --text-header-shadow: rgba(24, 24, 24, 0.27);
+  --element-shadow: rgba(19, 19, 19, 0.548);
+  --element-shadow-light: rgba(163, 163, 163, 0.548);
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  outline: none;
+  z-index: 0;
+  position: relative;
+  text-align: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  color: var(--text-dark);
+}
+
+html{
+  background-color: var(--bg-light);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+body.transition{
+  -webkit-animation: transition 0.3s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
+          animation: transition 0.3s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  font-style: none;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar-track{
+	background-color: none;
+}
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: var(--bg-light);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--element-hue);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--element-dark);
+}
+
+/*Motions*/
+@-webkit-keyframes transition{
+  to{
+    opacity: 0;
+  }
+}
+@keyframes transition{
+  to{
+    opacity: 0;
+  }
+}

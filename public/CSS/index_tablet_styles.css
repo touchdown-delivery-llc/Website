@@ -1,0 +1,174 @@
+/*
+Filename: index_tablet_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 11/7/18
+Description: 
+Styling for the index page, primarily tablet dimensions.
+*/
+
+@media only screen and (min-width: 641px){
+
+/*Mobile Navigation Bar Styles*/
+#mobile-nav.on{
+  width: 100vw;
+  height: 2.5em;
+  background-color: var(--bg-light);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2.5;
+  color: var(--text-hue);
+  font-size: 1.5em;
+  -webkit-animation: navIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+          animation: navIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+}
+
+#mobile-nav.off{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  position: absolute;
+  color: var(--text-light);
+  -webkit-animation: navOut 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+          animation: navOut 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+}
+
+.m-nav-item{
+  width: 15%;
+  padding: 0 2.5%;
+}
+
+.m-nav-item:hover{
+  padding: 0 3.5%;
+}
+
+/*Static Navigation Bar Styles*/
+#static-nav{
+  width: 100vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+  background: -webkit-linear-gradient(270deg, var(--element-light), var(--transparent));
+  -webkit-animation: navIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+          animation: navIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+}
+
+#nav-left{
+  height: 100%;
+  width: 10%;
+  z-index: 2;
+}
+
+#nav-right{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 1.9;
+}
+
+.nav-item{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 2%;
+  font-size: 1.5em;
+  color: var(--text-hue);
+}
+
+.nav-item:hover{
+  color: var(--text-dark);
+}
+/*Header Section Styles*/
+header{
+  height:  100vh;
+}
+
+#head-mission{
+  width: 100%;
+  padding-top: 20vh;
+  font-size: 5.3vw;
+}
+
+#head-button{
+  padding: 1.9%;
+  font-size: 2vw;
+}
+
+/*About section*/
+#about-title{
+  padding: 1%;
+  font-size: 2em;
+}
+
+#about-desc{
+  font-size: 1.5em;
+}
+
+/*Skynet Styles*/
+
+#sky-desc{
+  width: 100%;
+  text-align: center;
+}
+
+/*Jobs Styles*/
+#jobs{
+  height: 50vh;
+  flex-direction: row;
+}
+
+#job-left{
+  width: 50%;
+  height: 100%;
+}
+
+#job-title{
+  font-size: 2.8em;
+}
+
+#job-desc{
+  font-size: 1.7em;
+}
+
+#job-right{
+  width: 50%;
+  height: 100%;
+}
+
+#job-right img{
+  width: 75%;
+}
+
+/*End of media query*/
+}

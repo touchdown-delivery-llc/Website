@@ -1,0 +1,51 @@
+/*
+Filename: opening_motion.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 12/21/18
+Description: 
+Contains the animations rules for the openings.html
+*/
+
+/*static nav animation*/
+@-webkit-keyframes nav-in{
+  to{
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+@keyframes nav-in{
+  to{
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+/*opening title slide in animation*/
+@-webkit-keyframes slide{
+  to{
+    text-indent: 0;
+    opacity: 1;
+  }
+}
+@keyframes slide{
+  to{
+    text-indent: 0;
+    opacity: 1;
+  }
+}
+
+/*list fade animation*/
+@-webkit-keyframes fade{
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fade{
+  to{
+    opacity: 1;
+  }
+}

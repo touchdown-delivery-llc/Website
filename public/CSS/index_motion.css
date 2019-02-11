@@ -1,0 +1,102 @@
+/*
+Filename: index_motion.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 11/7/18
+Description: 
+Contains the animations rules for the index.html
+*/
+
+/*animates the navbars when they come in*/
+@-webkit-keyframes navIn{
+  from{
+    -webkit-transform: translateY(-5em);
+            transform: translateY(-5em);
+  }
+  to{
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes navIn{
+  from{
+    -webkit-transform: translateY(-5em);
+            transform: translateY(-5em);
+  }
+  to{
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*lets the mobile nav bar exit*/
+@-webkit-keyframes navOut{
+  from{
+    opacity: 1;
+    top: 0;
+  }
+  to{
+    opacity: 0;
+    top: -5em;
+  }
+}
+@keyframes navOut{
+  from{
+    opacity: 1;
+    top: 0;
+  }
+  to{
+    opacity: 0;
+    top: -5em;
+  }
+}
+/*fade up for header title*/
+@-webkit-keyframes headIn{
+  from{
+    opacity: 0;
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+  to{
+    opacity: 0.9;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes headIn{
+  from{
+    opacity: 0;
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+  to{
+    opacity: 0.9;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*fade up for header button*/
+@-webkit-keyframes buttonIn{
+  from{
+    opacity: 0;
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+  to{
+    opacity: 0.85;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes buttonIn{
+  from{
+    opacity: 0;
+    -webkit-transform: translateY(2vh);
+            transform: translateY(2vh);
+  }
+  to{
+    opacity: 0.85;
+    -webkit-transform: none;
+            transform: none;
+  }
+}

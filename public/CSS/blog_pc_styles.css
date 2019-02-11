@@ -1,0 +1,72 @@
+/*
+Filename: news_pc_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 03/01/18
+Description:
+styling for the news page, pc dimensions
+*/
+
+@media only screen and (min-width: 1025px){
+
+/*Navigation Styles*/
+#static-nav{
+  height: 3vh;
+}
+
+#static-nav a{
+  font-size: 1.5em;
+  line-height: 0.8;
+}
+
+/*Header Styles*/
+header{
+  font-size: 1.5vw;
+}
+
+/*Updates Styles*/
+
+#updates-presenter{
+  border-top: 3px solid var(--element-hue);
+}
+
+.log-title{
+  font-size: 1.7em;
+}
+
+.log-date{
+  font-size: 0.8em;
+}
+
+.log-desc{
+  font-size: 1.1em;
+}
+/*Reading Styles*/
+
+#content-nav{
+  font-size: 1.3em;
+}
+
+.content-title{
+  font-size: 2.5em;
+}
+
+
+.content-img{
+  font-size: 2em;
+}
+
+.content-section{
+  font-size: 1.5em;
+}
+
+#content-up{
+  font-size: 2.5em;
+}
+
+
+/*Footer Styles are inhereted from tablet query*/
+
+/*End of media query*/
+}

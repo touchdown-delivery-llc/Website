@@ -1,0 +1,127 @@
+/*
+Filename: openings_pc_styles.css
+Company: Touchdown Delivery, LLC
+Author: Darien Tsai
+Collaborators: none
+Date Created: 12/21/18
+Description: 
+styling for the openings page, tablet dimensions.
+*/
+
+@media only screen and (min-width: 641px){
+
+/*Navigation Styles*/
+#static-nav{
+  height: 5vh;
+}
+
+#static-nav a{
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+/*Header Styles Inhereted*/
+
+/*Position Tab Styles Inhereted*/
+
+/*Position Info Styles*/
+#op-title{
+  font-size: 2.2em;
+}
+
+#op-desc{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: initial;
+  -webkit-align-items: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+/*Join Styles Inhereted*/
+
+/*Footer Styles*/
+footer{
+  padding: 1.5% 0;
+}
+
+footer div{
+  padding: 1.2%;
+}
+
+#footer-links{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#footer-social{
+  width: 70%;
+}
+
+#footer-social h3{
+  display: block;
+  color: var(--text-light);
+}
+
+#social-medias{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  border-bottom: none;
+}
+
+#footer-nav{
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: top;
+  -webkit-justify-content: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+  border-bottom: none;
+  border-left: 2px solid var(--element-dark);
+}
+
+.f-nav-item{
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.f-nav-item:hover{
+  background-color: var(--text-dark);
+}
+
+#footer-meta{
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.2%;
+}
+
+#footer-meta h6{
+  padding: 0.5%;
+}
+
+
+/*End of media query*/
+}
