@@ -1,0 +1,9 @@
+#FILES TO IGNORE
+
+public/404.html
+public/skynet.html
+public/res/*
+
+#DIRECTORIES TO IGNORE
+
+libs/
