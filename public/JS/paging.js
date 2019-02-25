@@ -50,6 +50,7 @@ for( var i = 0; i < footNavs.length; i += 1){
   footNavs[i].addEventListener(
     'click',
     function(e){
+      e.preventDefault();
       transition(e);
     }
   );
