@@ -77,8 +77,8 @@ styling for the gallery page, mobile dimensions.
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 2vh 0;  
-  width: 90%;
-  height: 10vh;
+  width: 80vw;
+  height: 45vw;
   opacity: 0;
   -webkit-animation: img-in 0.5s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
           animation: img-in 0.5s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;

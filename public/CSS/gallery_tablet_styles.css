@@ -28,7 +28,8 @@ styling for the gallery page, tablet dimensions.
 /*Display Styles*/
 
 .item{
-  width: 30%;
+  width: 28vw;
+  height: 15.75vw;
 }
 
 /*End of media query*/

@@ -29,8 +29,8 @@ styling for the gallery page, pc dimensions.
 /*Display Styles*/
 
 .item{
-  display: block;
-  width: 20%;
+  width: 16vw;
+  height: 9vw;
 }
 
 /*End of media query*/
