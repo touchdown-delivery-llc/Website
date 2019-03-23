@@ -36,7 +36,6 @@ function switcher( idx ){
   foot.className = "";
 }
 
-//TODO implement JSON matching and parsing
 /**
  * loads the entry data into the append container
  * 
@@ -70,7 +69,9 @@ function display( obj ){
   //content array into a string of paragraphs
   var contentStr = "";
   for(var i = 0; i < obj.contents.length; i += 1){
-    var content = JSON.stringify(obj.contents[i]);
+    //Content string:
+    //Checks for parenthesis and turns them into tooltips
+    var content = addTooltips( JSON.stringify(obj.contents[i]) );
 
     contentStr += "<p class=\"content-section\">" +
      content.substring(first, content.length - 1) +
@@ -114,6 +115,31 @@ back.addEventListener(
     foot.className = "hidden";
   }
 )
+
+//goes through a string and turns parenthesis into tooltips
+function addTooltips( contentString ){
+
+  let spanOpenString = "<span class=\"tooltip\">";
+  let spanCloseString = "</span>";
+
+  //loop through the content string, find parenthesis
+  for( var i = 0; i < contentString.length; i += 1 ){
+
+    //sets the starIndex if detects a beginning parenthesis
+    if( contentString.charAt(i) == '(' ){
+      contentString = contentString.substring(0, i) +
+                                     spanOpenString +
+                      contentString.substring(i + 1);
+    }
+    else if( contentString.charAt(i) == ')'){
+      contentString = contentString.substring(0, i) +
+                                    spanCloseString +
+                      contentString.substring(i + 1);
+    }
+  }
+
+  return contentString;
+}
 
 //gets the url and simulates a blog click if possible
 function navFrom(){

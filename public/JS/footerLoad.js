@@ -12,8 +12,8 @@
 let footSegOne = "<div id=\"footer-links\"><div id=\"footer-social\">" +
 "<h3>Follow Us</h3><div id=\"social-medias\"><!--insert social media-->" +
 "<a href=\"http://www.facebook.com/1579189573\" class=\"social\"><img src=\"res/social/facebook_logo_white.png\"></a>" +
-"<a href=\"https://twitter.com/bryandierking\" class=\"social\"><img src=\"res/social/linkedIn_logo_white.png\"></a>" +
-"<a href=\"https://www.linkedin.com/in/bryan-dierking-93659838\" class=\"social\"><img src=\"res/social/twitter_logo_white.png\"></a>" +
+"<a href=\"https://www.linkedin.com/in/bryan-dierking-93659838\" class=\"social\"><img src=\"res/social/linkedIn_logo_white.png\"></a>" +
+"<a href=\"https://twitter.com/bryandierking\" class=\"social\"><img src=\"res/social/twitter_logo_white.png\"></a>" +
 "</div></div><div id=\"footer-nav\">";
 
 let links = document.getElementsByClassName('f-nav-item');

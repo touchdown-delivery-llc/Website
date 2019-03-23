@@ -223,7 +223,7 @@ header.hide{
 
 #append{
   width: 85%;
-  height: 90vh;
+  height: fit-content;
   margin: auto;
 }
 .content-title{
