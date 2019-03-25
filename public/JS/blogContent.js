@@ -79,6 +79,7 @@ function display( obj ){
   }
   //add all strings and add as a complete entry to display
   appendTo.innerHTML = titleStr + publishStr + imgStr + contentStr;
+
 }
 
 //add listeners to logs
@@ -119,22 +120,47 @@ back.addEventListener(
 //goes through a string and turns parenthesis into tooltips
 function addTooltips( contentString ){
 
-  let spanOpenString = "<span class=\"tooltip\">";
+  let spaceOne = 0;
+  let spaceTwo = 0;
+  let tipOpen = null;
+  let parsing = false;
+
+  let spanOpenStringOp = "<span class=\"tooltip\" name=\"";
+  let spanOpenStringEnd = "\">";
   let spanCloseString = "</span>";
 
   //loop through the content string, find parenthesis
   for( var i = 0; i < contentString.length; i += 1 ){
-
-    //sets the starIndex if detects a beginning parenthesis
+    //Goes through words by spaces
+    //When closing a tooltip text, adds as tooltip to previous word
     if( contentString.charAt(i) == '(' ){
-      contentString = contentString.substring(0, i) +
-                                     spanOpenString +
-                      contentString.substring(i + 1);
+      tipOpen = i + 1;
+      parsing = true;
     }
     else if( contentString.charAt(i) == ')'){
-      contentString = contentString.substring(0, i) +
+      //generate the string to add
+      let addition =               spanOpenStringOp +
+              contentString.substring( tipOpen, i ) +
+                                  spanOpenStringEnd +
+      contentString.substring( spaceOne, spaceTwo ) +
                                     spanCloseString +
-                      contentString.substring(i + 1);
+                     contentString.substring( i + 1);
+      //Store the pseudo element string
+      //let pseudo = "'" + contentString.substring( tipOpen, i ) + "'";
+
+      //Add everything
+      contentString = contentString.substring(0, spaceOne) + addition;
+                                       
+      //TODO CREATE AN ARRAY TO STORE TOOLTIPS, APPEND AFTER ARTICLE DISPLAYS -----------------------------------------------
+      parsing = false;
+    }
+    else if( contentString.charAt(i) == ' ' && !parsing ){
+      //when starting a new word
+      if( spaceOne <= spaceTwo){
+        spaceOne = spaceTwo + 1;
+      }
+      spaceTwo = i;
+      console.log(contentString.substring(spaceOne, spaceTwo));
     }
   }
 
@@ -148,6 +174,6 @@ function navFrom(){
     logs[blogNum].click();
   }
   catch(e){
-    console.log("Error: unobtainable selection index");
+    console.log("Error: unobtainable selection index OR no selection");
   }
 }

@@ -38,5 +38,39 @@ styling for the news page, tablet dimensions
   padding: 0;
 }
 
+/*Tootltip styles*/
+.tooltip{
+  border-bottom: 2px solid var(--text-light);
+  font-style: oblique;
+}
+
+.tooltip:hover{
+  border-bottom: 2px solid var(--text-hue);
+}
+
+.tooltip:hover:after{
+  opacity: 0.83;
+  transform: none;
+  width: auto;
+}
+.tooltip:after{
+  content: attr(name);
+  background-color: black;
+  color: white;
+  padding: 0.5% 1%;
+  text-indent: 0px;
+  border-radius: 5px;
+  font-size: 0.5em;
+  position: absolute;
+  right: 0;
+  bottom: 2.2em;
+  z-index: 2;
+  height: 2em;
+  white-space: nowrap;
+  transition-duration: 0.3s;
+  transform: translateY(1.7em);
+  opacity: 0;
+}
+
 /*End of media query*/
 }

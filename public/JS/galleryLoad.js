@@ -14,7 +14,7 @@ let view = document.getElementById("presenter");
 let path = "res/gallery/";
 
 //appends each image into viewer
-for( var count = 0; count < image.length, count += 1){
+for( var count = 0; count < image.length; count += 1 ){
   //create and add image to view area
   let source = path + JSON.stringify(image[count].name).substring(1, JSON.stringify(image[count].name).length - 1);
   var newImg = document.createElement("img");
