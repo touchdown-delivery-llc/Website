@@ -138,20 +138,17 @@ function addTooltips( contentString ){
       parsing = true;
     }
     else if( contentString.charAt(i) == ')'){
-      //generate the string to add
+      //generate string to add, set content for tooltip pseudo element in name 
       let addition =               spanOpenStringOp +
               contentString.substring( tipOpen, i ) +
                                   spanOpenStringEnd +
       contentString.substring( spaceOne, spaceTwo ) +
                                     spanCloseString +
                      contentString.substring( i + 1);
-      //Store the pseudo element string
       //let pseudo = "'" + contentString.substring( tipOpen, i ) + "'";
 
-      //Add everything
+      //Add everything, stop parsing
       contentString = contentString.substring(0, spaceOne) + addition;
-                                       
-      //TODO CREATE AN ARRAY TO STORE TOOLTIPS, APPEND AFTER ARTICLE DISPLAYS -----------------------------------------------
       parsing = false;
     }
     else if( contentString.charAt(i) == ' ' && !parsing ){
@@ -163,7 +160,6 @@ function addTooltips( contentString ){
       console.log(contentString.substring(spaceOne, spaceTwo));
     }
   }
-
   return contentString;
 }
 
