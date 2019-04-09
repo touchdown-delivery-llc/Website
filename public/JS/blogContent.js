@@ -63,6 +63,7 @@ function display( obj ){
                                         "</p>";
 
   //thumbnail string into article image
+  console.log(JSON.stringify(obj.thumbnail));
   var imgStr = "<img src=" + JSON.stringify(obj.thumbnail) +
                                   " class=\"content-img\">";
 

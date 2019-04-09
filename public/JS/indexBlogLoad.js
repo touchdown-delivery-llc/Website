@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
   //The container for blog posts
   let append = document.getElementById('progress-box');
   //The number of posts to be shown.
-  let posts = 3;
-  let hookEndIndex = 251; //number of characters for the preview text
+  let posts = 2;
+  let hookEndIndex = 75; //number of characters for the preview text
 
   //access first three posts, loads them into page
   for( var i = 0; i < posts; i += 1){
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //stringify thumbnail and hook
     var obj = entries[i]
     var thumb = JSON.stringify(obj.thumbnail);
-    var hook = JSON.stringify(obj.contents[0]).substring(0, hookEndIndex);
+    var hook = JSON.stringify(obj.contents[0]).substring(0,hookEndIndex)+"....";
 
     //take out quotation marks
     thumb = thumb.substring(1, thumb.length - 1);
@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function(){
   blogs[1].addEventListener( 'click',
     function( e ){ location.assign("blog.html#1");}
   );
+  /*
   blogs[2].addEventListener( 'click',
     function( e ){ location.assign("blog.html#2");}
   );
+  */
 });

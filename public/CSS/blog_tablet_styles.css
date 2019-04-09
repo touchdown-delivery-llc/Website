@@ -24,9 +24,14 @@ styling for the news page, tablet dimensions
 
 /*Updates Styles*/
 
-
 #updates-presenter{
   border-top: 2px solid var(--element-hue);
+}
+
+.log{
+  margin: 1%;
+  width: 45%;
+  border-bottom: 10px solid var(--element-hue);
 }
 
 .log-title{
@@ -59,10 +64,11 @@ styling for the news page, tablet dimensions
   color: white;
   padding: 0.5% 1%;
   text-indent: 0px;
+  letter-spacing: 1px;
   border-radius: 5px;
   font-size: 0.5em;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 2.2em;
   z-index: 2;
   height: 2em;
@@ -70,6 +76,20 @@ styling for the news page, tablet dimensions
   transition-duration: 0.3s;
   transform: translateY(1.7em);
   opacity: 0;
+}
+/*Reading styles*/
+#content.on{
+  display: default;
+  width: 60%;
+}
+
+.content-img{
+  width: 100%;
+  display: block;
+  color: var(--text-light);
+  font-size: 1.9em;
+  padding: 5%;
+  box-sizing: border-box;
 }
 
 /*End of media query*/

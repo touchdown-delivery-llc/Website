@@ -51,7 +51,7 @@ header.init{
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95vh;
+  height: 17vh;
   -webkit-animation: header-minimize 0.5s 0.8s 1 cubic-bezier(0.595, 0.165, 0.230, 0.995) forwards;
           animation: header-minimize 0.5s 0.8s 1 cubic-bezier(0.595, 0.165, 0.230, 0.995) forwards;
 }
@@ -77,11 +77,8 @@ header.show{
 #head-title{
   opacity: 0;
   color: var(--text-dark);
-  -webkit-transform: translateY(1vh);
-      -ms-transform: translateY(1vh);
-          transform: translateY(1vh);
-  -webkit-animation: heading-in 1.2s 0.2s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
-          animation: heading-in 1.2s 0.2s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
+  -webkit-animation: fade 1.2s 0.1s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
+          animation: fade 1.2s 0.1s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
 }
 
 header.hide{
@@ -133,42 +130,56 @@ header.hide{
   height: 100%;
   margin: auto;
   border-top: 1px solid var(--element-hue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  opacity: 0;
+  -webkit-animation: fade 1.5s 0.3s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
+          animation: fade 1.5s 0.3s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
 }
 
 .log{
-  margin-bottom: 1%;
+  margin: 2%;
   padding: 1%;
-  width: 100%;
+  width: 90%;
   background-color: var(--element-light);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: space-around;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
   color: var(--text-dark);
+  text-align: center;
+  border-bottom: 5px solid var(--element-hue);
 }
 
 .thumb{
-  width: 35%;
+  width: 100%;
+}
+
+.thumb img{
+  width: 100%;
+  padding: 2%;
+  box-sizing: border-box;
 }
 
 .text{
-  width: 65%;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1%;
 }
 
 .log-title{
-  text-align: left;
   font-size: 1.2em;
 }
 
 .log-date{
-  text-align: left;
   font-size: 0.6em;
   padding: 1%;
   color: var(--text-hue);
@@ -178,6 +189,9 @@ header.hide{
   text-align: left;
   font-size: 0.9em;
   padding: 1%;
+  letter-spacing: 0.5px;
+  text-indent: 3%;
+  line-height: 1.5;
 }
 /*Reading Styles*/
 
@@ -186,6 +200,7 @@ header.hide{
   width: 80%;
   margin: auto;
   opacity: 0;
+  overflow: visible;
   overflow: hidden;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -248,10 +263,19 @@ header.hide{
 
 .content-section{
   font-size: 1em;
-  line-height: 1.7;
+  line-height: 2;
+  letter-spacing: 0.2px;
   text-align: left;
   text-indent: 30px;
   padding: 1%;
+}
+
+.content-figure{
+  display: block;
+  margin: auto;
+  width: 85%;
+  padding: 2%;
+  box-sizing: border-box;
 }
 
 #content-go-up{

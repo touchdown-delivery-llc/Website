@@ -36,19 +36,9 @@ Contains the animations rules for the news.html
   }
 }
 
-@-webkit-keyframes heading-in{
+@keyframes fade{
   to{
     opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes heading-in{
-  to{
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
   }
 }
 

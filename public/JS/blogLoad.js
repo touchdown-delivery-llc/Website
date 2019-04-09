@@ -12,7 +12,7 @@
 document.addEventListener("DOMContentLoaded", function(){
   let logContainer = document.getElementById('updates');
   let presenter = document.getElementById('updates-presenter');
-  let endHookIndex = 251; //number of characters for the preview text
+  let endHookIndex = 75; //number of characters for the preview text
 
   for( var i = 0; i < entries.length; i += 1){
     //stringify id, thumbnail, title, date, hook
@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function(){
     var thumb = JSON.stringify(obj.thumbnail);
     var title = JSON.stringify(obj.title);
     var date = JSON.stringify(obj.date);
-    var hook = JSON.stringify(obj.contents[0]).substring(0, endHookIndex);
+    var hook = JSON.stringify(obj.contents[0]).substring(0, endHookIndex) + "....";
 
     //create the html string
     presenter.innerHTML += "<div class=\"log " +
-      num.substring(1, num.length - 1) + "\">" +
-              "<div class=\"thumb\"><img src=" +
+  num.substring(1, num.length - 1) + "\"><div" +
+  " class=\"thumb\"><img draggable=false src=" +
            thumb + " alt=\"Thumbnail\"></div>" +
                     "<div class=\"text\"><h3 " +
                         "class=\"log-title\">" +
