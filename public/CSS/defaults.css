@@ -136,22 +136,21 @@ footer div{
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  padding: 2.5% 0 4%;
   width: 100%
 }
 
 .social{
   width: fit-content;
-  padding: 0 8%;
+  padding: 0 4%;
 }
 
 #social-medias img{
-  width: 5.5vw;
+  width: 3.5vw;
 }
 
 #footer-links{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
 }
@@ -161,14 +160,14 @@ footer div{
 }
 
 #footer-nav{
-  width: 90%;
+  width: 65%;
   display: flex;
   justify-content: space-around;
 }
 
 #footer-nav a{
-  font-size: 0.6em;
-  padding: 1.3% 1% 1.5%;
+  font-size: 0.7em;
+  padding: 1.8% 1% 2%;
   text-align: center;
   color: var(--text-light);
   cursor: pointer;
@@ -179,19 +178,34 @@ footer div{
   text-align: center;
   font-size: 0.43em;
   box-sizing: border-box;
-  padding: 3% 0 2.3%;
+  padding-bottom: 2%;
   color: var(--text-hue);
 }
 
 /*footer, tablet dimensions*/
 @media only screen and (min-width: 641px){
+#footer-nav{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
 #footer-nav a{
-  font-size: 1em;
-  padding: 2% 2% 0.9%;
+  font-size: 1.2em;
+  padding: 2% 2% 2%;
+}
+
+.social{
+  padding: 0 3%;
+}
+
+#social-medias img{
+  width: 2.2vw;
 }
 
 #footer-meta h6{
   font-size: 0.65em;
+  padding-bottom: 1%;
 }
 }
 
