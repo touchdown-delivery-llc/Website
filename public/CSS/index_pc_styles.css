@@ -107,9 +107,8 @@ nav#static-nav{
 }
 
 #job-title{
-  padding: 3% 0.5% 0.5%;
+  padding: 3%;
   font-size: 3.5em;
-  flex-grow: 11;
 }
 
 /*End of media query*/

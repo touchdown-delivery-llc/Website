@@ -126,6 +126,14 @@ header{
 }
 
 /*About section*/
+#about{
+  height: 90vh;
+}
+
+#about-left img{
+  width: 70%;
+}
+
 #about-title{
   padding: 1%;
   font-size: 2em;
@@ -133,13 +141,6 @@ header{
 
 #about-desc{
   font-size: 1.5em;
-}
-
-/*Skynet Styles*/
-
-#sky-desc{
-  width: 100%;
-  text-align: center;
 }
 
 /*Jobs Styles*/
