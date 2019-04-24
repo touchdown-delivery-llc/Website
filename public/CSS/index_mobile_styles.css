@@ -219,7 +219,7 @@ header{
   display: block;
   margin: auto;
   width: fit-content;
-  padding: 1%;
+  padding: 2.5%;
   color: var(--text-light);
   font-size: 1.3em;
   background-color: var(--element-dark);

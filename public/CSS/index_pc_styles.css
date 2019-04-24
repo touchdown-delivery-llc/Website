@@ -63,10 +63,18 @@ nav#static-nav{
   width: 35vw;
 }
 
+/*V8 Model Styles*/
+#v8{
+  padding: 2% 0;
+}
+
+#v8-gallery{
+  padding: 1%;
+}
+
 /*Recent Updates Styles*/
 #progress-box{
   width: 95%;
-  background-color: var(--element-dark);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -81,24 +89,6 @@ nav#static-nav{
 
 .event img{
   height: 35vh;
-}
-
-/*Skynet Styles*/
-#sky-left h3{
-  font-size: 2.5em;
-  width: 90%;
-  margin: auto;
-}
-
-#sky-title{
-  font-size: 3.5vw;
-  padding: 3%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#sky-desc{
-  padding: 3%;
 }
 
 /*Jobs Styles*/
