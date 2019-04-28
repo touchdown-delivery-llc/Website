@@ -11,14 +11,9 @@ styling for the gallery page, pc dimensions.
 @media only screen and (min-width: 1025px){
 
 /*Navigation Styles*/
-#static-nav{
-  height: 3vh;
-}
-
 #static-nav a{
   font-size: 1.5em;
   line-height: 0.8;
-  margin: auto;
 }
 
 /*Header Styles*/

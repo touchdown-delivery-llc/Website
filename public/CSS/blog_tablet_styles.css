@@ -12,12 +12,11 @@ styling for the news page, tablet dimensions
 
 /*Navigation Styles*/
 #static-nav{
-  height: 5vh;
+  height: fit-content;
 }
 
 #static-nav a{
-  font-size: 2em;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /*Header Styles Are Inhereted*/
@@ -31,6 +30,7 @@ styling for the news page, tablet dimensions
 .log{
   margin: 1%;
   width: 45%;
+  height: fit-content;
   border-bottom: 10px solid var(--element-hue);
 }
 

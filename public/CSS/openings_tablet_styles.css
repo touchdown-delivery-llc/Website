@@ -12,11 +12,10 @@ styling for the openings page, tablet dimensions.
 
 /*Navigation Styles*/
 #static-nav{
-  height: 5vh;
+  height: fit-content;
 }
 
 #static-nav a{
-  font-size: 2em;
   line-height: 1.5;
 }
 
