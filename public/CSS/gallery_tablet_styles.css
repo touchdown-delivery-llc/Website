@@ -12,10 +12,11 @@ styling for the gallery page, tablet dimensions.
 
 /*Navigation Styles*/
 #static-nav{
-  height: fit-content;
+  height: 5vh;
 }
 
 #static-nav a{
+  font-size: 2em;
   line-height: 1.5;
 }
 
