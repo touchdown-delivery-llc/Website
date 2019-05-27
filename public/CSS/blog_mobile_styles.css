@@ -1,5 +1,5 @@
 /*
-Filename: news_mobile_styles.css
+Filename: blog_mobile_styles.css
 Company: Touchdown Delivery, LLC
 Author: Darien Tsai
 Collaborators: none
@@ -41,14 +41,11 @@ header{
 header.init{
   background-color: var(--bg-light);
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   height: 17vh;
@@ -58,14 +55,11 @@ header.init{
 header.show{
   width: 100vw;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   height: 5vh;
@@ -84,14 +78,11 @@ header.show{
 header.hide{
   color: var(--transparent);
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
@@ -130,9 +121,14 @@ header.hide{
   height: 100%;
   margin: auto;
   border-top: 1px solid var(--element-hue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   opacity: 0;
   -webkit-animation: fade 1.5s 0.3s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
           animation: fade 1.5s 0.3s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
@@ -144,13 +140,15 @@ header.hide{
   width: 90%;
   background-color: var(--element-light);
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-around;
       -ms-flex-pack: justify;
           justify-content: space-around;
   color: var(--text-dark);
@@ -165,7 +163,8 @@ header.hide{
 .thumb img{
   width: 100%;
   padding: 2%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .text{
@@ -238,6 +237,8 @@ header.hide{
 
 #append{
   width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin: auto;
 }
@@ -275,7 +276,8 @@ header.hide{
   margin: auto;
   width: 85%;
   padding: 2%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #content-go-up{

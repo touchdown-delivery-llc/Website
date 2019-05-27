@@ -50,9 +50,8 @@ have access to
   z-index: 0;
   position: relative;
   text-align: center;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   color: var(--text-dark);
 }
 
@@ -112,6 +111,8 @@ a{
 /*footer, mobile dimensions*/
 footer{
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1% 0;
   background-color: var(--bg-dark);
@@ -120,27 +121,34 @@ footer{
 
 footer div{
   padding: 0.5% 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: var(--text-light);
   font-size: 1em;
 }
 
 #footer-social{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 70%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #social-medias{
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%
 }
 
 .social{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0 4%;
 }
@@ -150,10 +158,18 @@ footer div{
 }
 
 #footer-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #footer-social h3{
@@ -162,8 +178,11 @@ footer div{
 
 #footer-nav{
   width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #footer-nav a{
@@ -178,7 +197,8 @@ footer div{
 #footer-meta h6{
   text-align: center;
   font-size: 0.43em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-bottom: 2%;
   color: var(--text-hue);
 }
@@ -187,8 +207,11 @@ footer div{
 @media only screen and (min-width: 641px){
 #footer-nav{
   width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #footer-nav a{
@@ -219,22 +242,28 @@ footer{
 #footer-links{
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1.5% 0 0;
 }
 
 #footer-social{
   width: 28%;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #footer-social h3{
@@ -244,12 +273,10 @@ footer{
 
 #social-medias{
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-bottom: none;
 }
 
@@ -261,11 +288,9 @@ footer{
   width: 15%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: top;
-  -webkit-justify-content: top;
       -ms-flex-pack: top;
           justify-content: top;
   border-bottom: none;
@@ -294,6 +319,8 @@ footer{
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 

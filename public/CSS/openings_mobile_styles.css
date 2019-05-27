@@ -1,5 +1,5 @@
 /*
-Filename: openings_pc_styles.css
+Filename: openings_mobile_styles.css
 Company: Touchdown Delivery, LLC
 Author: Darien Tsai
 Collaborators: none
@@ -39,14 +39,11 @@ styling for the openings page, mobile dimensions.
   width: 100vw;
   height: 50vh;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   background: var(--bg-light);
@@ -73,17 +70,17 @@ styling for the openings page, mobile dimensions.
   margin: auto;
   height: 5vh;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--element-light);
   line-height: 3;
   white-space: nowrap;
-  transform: translateY( 20px);
+  -webkit-transform: translateY( 20px);
+      -ms-transform: translateY( 20px);
+          transform: translateY( 20px);
   opacity: 0;
   -webkit-animation: nav-in 0.8s 0.2s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
   animation: nav-in 0.8s 0.2s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
@@ -121,7 +118,9 @@ styling for the openings page, mobile dimensions.
 }
 
 #info-title-container{
-  transform: translateY( 20px);
+  -webkit-transform: translateY( 20px);
+      -ms-transform: translateY( 20px);
+          transform: translateY( 20px);
   opacity: 0;
   -webkit-animation: nav-in 0.8s 0.4s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
   animation: nav-in 0.8s 0.4s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
@@ -147,25 +146,23 @@ styling for the openings page, mobile dimensions.
   width: 95%;
   margin: auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1% 0 2.5%;
   border-bottom: 1px solid var(--element-light);
-  transform: translateY( 20px);
+  -webkit-transform: translateY( 20px);
+      -ms-transform: translateY( 20px);
+          transform: translateY( 20px);
   opacity: 0;
   -webkit-animation: nav-in 0.8s 0.6s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
   animation: nav-in 0.8s 0.6s 1 cubic-bezier(0.1, 0.7, 0.165, 1) forwards;
@@ -199,24 +196,19 @@ styling for the openings page, mobile dimensions.
   width: 100%;
   padding: 2.5% 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   height: 20vh;
 }
 

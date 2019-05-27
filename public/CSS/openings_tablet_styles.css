@@ -1,5 +1,5 @@
 /*
-Filename: openings_pc_styles.css
+Filename: openings_tablet_styles.css
 Company: Touchdown Delivery, LLC
 Author: Darien Tsai
 Collaborators: none
@@ -28,14 +28,11 @@ styling for the openings page, tablet dimensions.
 #op-desc{
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: initial;
-  -webkit-align-items: initial;
       -ms-flex-align: initial;
           align-items: initial;
 }

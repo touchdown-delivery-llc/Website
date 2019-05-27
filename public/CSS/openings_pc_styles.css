@@ -31,8 +31,6 @@ styling for the openings page, pc dimensions.
 
   -webkit-box-pack: justify;
 
-  -webkit-justify-content: space-between;
-
       -ms-flex-pack: justify;
 
           justify-content: space-between;

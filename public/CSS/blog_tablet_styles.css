@@ -1,5 +1,5 @@
 /*
-Filename: news_tablet_styles.css
+Filename: blog_tablet_styles.css
 Company: Touchdown Delivery, LLC
 Author: Darien Tsai
 Collaborators: none
@@ -10,87 +10,94 @@ styling for the news page, tablet dimensions
 
 @media only screen and (min-width: 641px){
 
-/*Navigation Styles*/
-#static-nav{
-  height: 5vh;
-}
-
-#static-nav a{
-  font-size: 2em;
-  line-height: 1.5;
-}
-
-/*Header Styles Are Inhereted*/
-
-/*Updates Styles*/
-
-#updates-presenter{
-  border-top: 2px solid var(--element-hue);
-}
-
-.log{
-  margin: 1%;
-  width: 45%;
-  border-bottom: 10px solid var(--element-hue);
-}
-
-.log-title{
-  font-size: 1.3em;
-}
-/*Reading Styles*/
-
-.content-img{
-  padding: 0;
-}
-
-/*Tootltip styles*/
-.tooltip{
-  border-bottom: 2px solid var(--text-light);
-  font-style: oblique;
-}
-
-.tooltip:hover{
-  border-bottom: 2px solid var(--text-hue);
-}
-
-.tooltip:hover:after{
-  opacity: 0.83;
-  transform: none;
-  width: auto;
-}
-.tooltip:after{
-  content: attr(name);
-  background-color: black;
-  color: white;
-  padding: 0.5% 1%;
-  text-indent: 0px;
-  letter-spacing: 1px;
-  border-radius: 5px;
-  font-size: 0.5em;
-  position: absolute;
-  left: 0;
-  bottom: 2.2em;
-  z-index: 2;
-  height: 2em;
-  white-space: nowrap;
-  transition-duration: 0.3s;
-  transform: translateY(1.7em);
-  opacity: 0;
-}
-/*Reading styles*/
-#content.on{
-  display: default;
-  width: 60%;
-}
-
-.content-img{
-  width: 100%;
-  display: block;
-  color: var(--text-light);
-  font-size: 1.9em;
-  padding: 5%;
-  box-sizing: border-box;
-}
-
-/*End of media query*/
-}
+  /*Navigation Styles*/
+  #static-nav{
+    height: 5vh;
+  }
+  
+  #static-nav a{
+    font-size: 2em;
+    line-height: 1.5;
+  }
+  
+  /*Header Styles Are Inhereted*/
+  
+  /*Updates Styles*/
+  
+  #updates-presenter{
+    border-top: 2px solid var(--element-hue);
+  }
+  
+  .log{
+    margin: 1%;
+    width: 45%;
+    border-bottom: 10px solid var(--element-hue);
+  }
+  
+  .log-title{
+    font-size: 1.3em;
+  }
+  /*Reading Styles*/
+  
+  .content-img{
+    padding: 0;
+  }
+  
+  /*Tootltip styles*/
+  .tooltip{
+    border-bottom: 2px solid var(--text-light);
+    font-style: oblique;
+  }
+  
+  .tooltip:hover{
+    border-bottom: 2px solid var(--text-hue);
+  }
+  
+  .tooltip:hover:after{
+    opacity: 0.83;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: auto;
+  }
+  .tooltip:after{
+    content: attr(name);
+    background-color: black;
+    color: white;
+    padding: 0.5% 1%;
+    text-indent: 0px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size: 0.5em;
+    position: absolute;
+    left: 0;
+    bottom: 2.2em;
+    z-index: 2;
+    height: 2em;
+    white-space: nowrap;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transform: translateY(1.7em);
+        -ms-transform: translateY(1.7em);
+            transform: translateY(1.7em);
+    opacity: 0;
+  }
+  /*Reading styles*/
+  #content.on{
+    display: default;
+    width: 60%;
+  }
+  
+  .content-img{
+    width: 100%;
+    display: block;
+    color: var(--text-light);
+    font-size: 1.9em;
+    padding: 5%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  /*End of media query*/
+  }

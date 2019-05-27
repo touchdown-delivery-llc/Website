@@ -27,6 +27,9 @@ nav#static-nav{
   font-size: 2em;
   background: -webkit-linear-gradient(180deg, var(--element-light), var(--transparent));
   background: -o-linear-gradient(180deg, var(--element-light), var(--transparent));
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--element-light)), to(var(--transparent)));
+  background: -webkit-linear-gradient(top, var(--element-light), var(--transparent));
+  background: -o-linear-gradient(top, var(--element-light), var(--transparent));
   background: linear-gradient(180deg, var(--element-light), var(--transparent));
 }
 
@@ -48,7 +51,6 @@ nav#static-nav{
   height: 50vh;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
@@ -77,7 +79,6 @@ nav#static-nav{
   width: 95%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }

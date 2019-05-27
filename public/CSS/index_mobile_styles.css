@@ -10,6 +10,8 @@ Styling for the index page, primarily for phones.
 
 body{
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -57,40 +59,55 @@ header{
 }
 
 #head-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 95%;
 }
 
 #head-mission{
   color: var(--text-dark);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   opacity: 0;
   font-size: 7vw;
   text-shadow: 2px 2px 2px var(--text-header-shadow);
-  animation: headIn 1.2s 0.2s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: headIn 1.2s 0.2s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: headIn 1.2s 0.2s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 #head-button{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   padding: 2.3vh;
   color: var(--text-light);
   font-size: 3vh;
   background-color: var(--element-dark);
-  box-shadow: 0 0 17px 0 var(--element-shadow);
+  -webkit-box-shadow: 0 0 17px 0 var(--element-shadow);
+          box-shadow: 0 0 17px 0 var(--element-shadow);
   opacity: 0;
-  animation: buttonIn 0.8s 0.5s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: buttonIn 0.8s 0.5s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: buttonIn 0.8s 0.5s 1 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 #head-button:hover{
-  box-shadow: 0 0 55px 0 var(--element-shadow);
+  -webkit-box-shadow: 0 0 55px 0 var(--element-shadow);
+          box-shadow: 0 0 55px 0 var(--element-shadow);
 }
 
 #head-button:active{
-  box-shadow: 0 0 35px 0 var(--element-shadow);
+  -webkit-box-shadow: 0 0 35px 0 var(--element-shadow);
+          box-shadow: 0 0 35px 0 var(--element-shadow);
 }
 
 /*About section*/
@@ -99,17 +116,29 @@ header{
   height: 85vh;
   padding: 3% 0 1%;
   background-color: var(--bg-hue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #about-left{
   width: 100%;
   height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about-left img{
@@ -125,7 +154,8 @@ header{
 
 #about-title{
   font-size: 1.7em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 2%;
   width: 90%;
   margin: auto;
@@ -137,12 +167,15 @@ header{
   padding: 3.5%;
   width: 95%;
   margin: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Recent Updates Styles*/
 #recent{
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 2% 0;
   background-color: var(--bg-dark);
@@ -159,13 +192,23 @@ header{
 
 #progress-box{
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin: auto;
   padding: 1.5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .event{
@@ -190,6 +233,8 @@ header{
 /*V8 Model Styles*/
 #v8{
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 15% 0;
   background-color: var(--bg-light);
@@ -218,6 +263,8 @@ header{
 #v8-gallery{
   display: block;
   margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 2.5%;
   color: var(--text-light);
@@ -234,9 +281,16 @@ header{
   width: 100vw;
   height: 80vh;
   background-color: var(--bg-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   overflow: hidden;
 }
 
@@ -244,19 +298,29 @@ header{
   width: 100%;
   height: 40%;
   padding: 5% 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 0;
   background-color: var(--bg-hue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
 #job-title{
   padding: 1.5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 3em;
 }
 
@@ -270,17 +334,22 @@ header{
   background-color: var(--element-dark);
   color: var(--text-light);
   padding: 1.9% 2.7%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
-  box-shadow: 0 0 17px 0 var(--element-shadow);
+  -webkit-box-shadow: 0 0 17px 0 var(--element-shadow);
+          box-shadow: 0 0 17px 0 var(--element-shadow);
 }
 
 #view-jobs:hover{
-  box-shadow: 0 0 55px 0 var(--element-shadow);
+  -webkit-box-shadow: 0 0 55px 0 var(--element-shadow);
+          box-shadow: 0 0 55px 0 var(--element-shadow);
 }
 
 #view-jobs:active{
-  box-shadow: 0 0 35px 0 var(--element-shadow);
+  -webkit-box-shadow: 0 0 35px 0 var(--element-shadow);
+          box-shadow: 0 0 35px 0 var(--element-shadow);
 }
 
 .job-item{
@@ -294,13 +363,20 @@ header{
 #job-right{
   width: 100%;
   height: 60%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--bg-light);
-  box-shadow: 0 0 50px 5px var(--element-shadow-light);
+  -webkit-box-shadow: 0 0 50px 5px var(--element-shadow-light);
+          box-shadow: 0 0 50px 5px var(--element-shadow-light);
 }
 
 #job-right img{
